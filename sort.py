@@ -1,9 +1,7 @@
-def sort_list():
-	list_f = [90, 70, 31, 32, 33, 10, 11, 93, 105]
-
-
-	n = len(list_f)
-	print("Input:", list_f)
+def sort_list(list):
+	
+	n = len(list)
+	print("Input:", list)
 	print("The list length", n)
 
 	hold = 0
@@ -12,14 +10,13 @@ def sort_list():
 
 	while i < n:
 		while j < n-i-1:
-			if list_f[j] > list_f[j+1]:
-				hold = list_f[j]
-				list_f[j] = list_f[j+1]
-				list_f[j+1] = hold
+			if list[j] > list[j+1]:
+				hold = list[j]
+				list[j] = list[j+1]
+				list[j+1] = hold
 			j += 1
 		i = i+1
 		j = 0
-	print("Output:", list_f)
+	print("Output:", list)
 
-
-sort_list()
+sort_list([1,2,3,1,0,0])
