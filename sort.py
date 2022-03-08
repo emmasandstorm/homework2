@@ -18,5 +18,7 @@ def sort_list(list):
 		i = i+1
 		j = 0
 	print("Output:", list)
+	return list
+
 
 sort_list([1,2,3,1,0,0])
