@@ -6,8 +6,3 @@ def doubler(func):
 		func()
 	return wrapper
 
-def value(x=10,y=10):
-	print(x+y)
-
-value = doubler(value)
-value()
