@@ -2,7 +2,7 @@ import time
 
 def calculate_time(func):
 	def wrapper():
-        	time_start = time.time()
+		time_start = time.time()
 		func()
 		time_end = time.time()
 		total_time = time_end - time_start
